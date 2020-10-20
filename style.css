@@ -1,0 +1,99 @@
+html {
+    font-size: 10px;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: lightseagreen;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+.header {
+    padding: 0 0.62rem;
+    margin: 1.8rem;
+    text-align: center;
+}
+h1 {
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: Roboto;
+}
+p {
+    font-size: 2.12rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+#description {
+    font-style: italic;
+    font-weight: 200;
+}
+form {
+    box-sizing: border-box;
+    background: rgba(0, 0, 139, 0.35);
+    width: 85%;
+    height: auto;
+    padding: 2.5rem;
+    margin: 2rem 5rem;
+    border-radius: 1rem;
+}
+@media (min-width: 480px) {
+    form {
+        padding: 2rem;
+    }
+}
+#form-group {
+    padding: 0.2rem;
+    margin: auto;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: Oswald;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    line-height: 2.5rem;
+    padding: 0.3rem 0.7rem;
+    color: gray;
+    background-color: honeydew;
+    margin: 1rem -0.7rem;
+    font-style: italic;
+    font-size: 1.7rem;
+}
+fieldset {
+    margin-top: 10px;
+
+}
+legend {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.submit {
+    display: block;
+    width: 100%;
+    background-color: limegreen;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    height: 35px;
+}

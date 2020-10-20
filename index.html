@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Survey form">
+        <meta name="refresh" content="30">
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Bebas Neue&effect=shadow-multiple|fire|3d-float">
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body class="body">
+        <div class="container">
+            <header class="header">
+                <h1 id="title">Impolite Survey Form</h1>
+                <p id="description">Thank you for taking your time and helping us improve our website</p>
+            </header>
+            <form id="survey-form">
+                <div id="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div id='form-group'>
+                    <label id="email-label" for="email">Email</label>
+                    <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+                <div id="form-group">
+                    <label id="age-label" for="age">Age</label>
+                    *You can skip this question if you are immortal*
+                    <input type="number" id="number" name="age" min="10" max="99" class="form-control" placeholder="Age">
+                </div>
+                <div id="form-group">
+                    <p>Which option describes you best?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select something</option>
+                        <option value="MeatLover">Meat Lover</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Beer Lover">Beer Lover</option>
+                        <option value="Notinterested">It is not enough words to describe how awesome I am</option>
+                    </select>
+                </div>
+                <fieldset id="form-group">
+                    <legend>Would you recommend our website? </legend>
+                    <label for="definitely">
+                        <input id="definitely" type="radio" name="user-recom" value="definitely">
+                        Definitely
+                    </label>
+                    <label for="probably">
+                        <input id="probably" type="radio" name="user-recom" value="probably">
+                        Probably
+                    </label>
+                    <label for="doubt">
+                        <input id="doubt" type="radio" name="user-recom" value="doubt">
+                        Will think about it
+                    </label>
+                    <label for="negative">
+                        <input id="negative" type="radio" name="user-recom" value="negative">
+                        Absolutely Not!
+                    </label>
+                </fieldset>
+
+                <div id="form-group">
+                    <p>What do you like on our website ?</p>
+                    <select id ="dropdown" name="thingstolike" class="form-control" required>
+                        <option desabled selected value>Select something</option>
+                        <option value="Everything_perfect">Everything is perfect</option>
+                        <option value="Design">Design</option>
+                        <option value="Content">Content</option>
+                        <option value="Nothing">Nothing is good</option>
+                        <option value="Negative">Your site is terrible</option>
+                    </select>
+                </div>
+                <div id="form-group">
+                    <p>What else would you like to see on our page ?</p>
+                    <label for="videos">
+                        <input id="videos" type="checkbox" name="user-recom" value="videos">
+                        More videos
+                    </label>
+                    <label for="pictures">
+                        <input id="pictures" type="checkbox" name="user-recom" value="pictures">
+                        More pictures
+                    </label>
+                    <label for="newdesign">
+                        <input id="newdesign" type="checkbox" name="user-com" value="newdesign">
+                        New Design
+                    </label>
+                    <label for="dont">
+                        <input id="dont" type="checkbox" name="user-com" value="dont">
+                        I would like you to delete your site. People should't see it.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
